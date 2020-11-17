@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Work Day Scheduler</title>
+  </head>
+
+  <body>
+    <header class="jumbotron">
+      <h1 class="display-3">Work Day Scheduler</h1>
+      <p class="lead">A simple calendar app for scheduling your work day</p>
+      <p id="currentDay" class="lead"></p>
+    </header>
+    <div class="container">
+      <!-- Timeblocks go here -->
+
+      <!-- 9am block goes here-->
+      <div class="row">
+        <form class="input-group time-block">
+          <div class="input-group-prepend">
+            <p class="hour" id="hour9">9AM</p>
+          </div>
+          <textarea class="form-control description" id="desc9" data-time="9" ></textarea>
+          <div class="input-group-append">
+            <button class="btn btn-primary saveBtn" type="submit"><i class="fas fa-save"></i></button>
+          </div>
+        </form>
+      </div>
+
+      <!-- 10am block goes here-->
+      <div class="row">
+        <form class="input-group time-block">
+          <div class="input-group-prepend">
+            <p class="hour" id="hour10">10AM</p>
+          </div>
+          <textarea class="form-control description" id="desc10" data-time="10" ></textarea>
+          <div class="input-group-append">
+            <button class="btn btn-primary saveBtn" type="submit" data-time="10"><i class="fas fa-save"></i></button>
+          </div>
+        </form>
+      </div>
+
+      <!-- 11am block goes here-->
+      <div class="row">
+        <form class="input-group time-block">
+          <div class="input-group-prepend">
+            <p class="hour" id="hour11">11AM</p>
+          </div>
+          <textarea class="form-control description" id="11desc" data-time="11"></textarea>
+          <div class="input-group-append">
+            <button class="btn btn-primary saveBtn" type="submit"><i class="fas fa-save"></i></button>
+          </div>
+        </form>
+      </div>
+      
+      <!-- 12pm block goes here-->
+      <div class="row">
+        <form class="input-group time-block">
+          <div class="input-group-prepend">
+            <p class="hour" id="hour12">12PM</p>
+          </div>
+          <textarea class="form-control description" id="desc12" data-time="12"></textarea>
+          <div class="input-group-append">
+            <button class="btn btn-primary saveBtn" type="submit"><i class="fas fa-save"></i></button>
+          </div>
+        </form>
+      </div>
+
+      <!-- 1pm block goes here-->
+      <div class="row">
+        <form class="input-group time-block">
+          <div class="input-group-prepend">
+            <p class="hour" id="hour13">1PM</p>
+          </div>
+          <textarea class="form-control description" id="desc13" data-time="13"></textarea>
+          <div class="input-group-append">
+            <button class="btn btn-primary saveBtn" type="submit"><i class="fas fa-save"></i></button>
+          </div>
+        </form>
+      </div>
+
+      <!-- 2pm blcok goes here-->
+      <div class="row">
+        <form class="input-group time-block">
+          <div class="input-group-prepend">
+            <p class="hour" id="hour14">2PM</p>
+          </div>
+          <textarea class="form-control description" id="desc14" data-time="14"></textarea>
+          <div class="input-group-append">
+            <button class="btn btn-primary saveBtn" type="submit"><i class="fas fa-save"></i></button>
+          </div>
+        </form>
+      </div>
+
+      <!-- 3pm block goes here-->
+      <div class="row">
+        <form class="input-group time-block">
+          <div class="input-group-prepend">
+            <p class="hour" id="hour15">3PM</p>
+          </div>
+          <textarea class="form-control description" id="desc15" data-time="15"></textarea>
+          <div class="input-group-append">
+            <button class="btn btn-primary saveBtn" type="submit"><i class="fas fa-save"></i></button>
+          </div>
+        </form>
+      </div>
+
+      <!-- 4pm block goes here-->
+      <div class="row">
+        <form class="input-group time-block">
+          <div class="input-group-prepend">
+            <p class="hour" id="hour16">4PM</p>
+          </div>
+          <textarea class="form-control description" id="desc16" data-time="16"></textarea>
+          <div class="input-group-append">
+            <button class="btn btn-primary saveBtn" type="submit"><i class="fas fa-save"></i></button>
+          </div>
+        </form>
+      </div>
+
+      <!-- 5pm block goes here-->
+      <div class="row">
+        <form class="input-group time-block">
+          <div class="input-group-prepend" id="hour17">
+            <p class="hour">5PM</p>
+          </div>
+          <textarea class="form-control description" id="desc17" data-time="17"></textarea>
+          <div class="input-group-append">
+            <button class="btn btn-primary saveBtn" type="submit"><i class="fas fa-save"></i></button>
+          </div>
+        </form>
+      </div>
+
+      <div class="text-center">
+        <button class="btn btn-primary" id="clear-btn">Clear All</button>
+      </div>
+
+    </div>
+
+     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+     <script src="script.js"></script>
+     
+  </body>
+</html>
