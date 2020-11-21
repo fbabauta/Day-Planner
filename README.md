@@ -15,7 +15,8 @@ Made using: HTML5, CSS, and JavaScript
 &rightarrow; Color-coded form inputs to determine events for the current hour, along with the past and future events
 
 ## Live Site
-https://fbabauta.github.io/Day-Planner/.
+
+https://fbabauta.github.io/Day-Planner/
 
 
 
