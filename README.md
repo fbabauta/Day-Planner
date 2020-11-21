@@ -8,7 +8,9 @@ Made using: HTML5, CSS, and JavaScript
 
 ## Stipulations
 &rightarrow; Add and edit hourly events for a 9-5 workday
+
 &rightarrow; Save events in the browser to persist across page loads
+
 &rightarrow; Color-coded form inputs to determine events for the current hour, along with the past and future events
 
 ## Live Site
